@@ -87,7 +87,8 @@ App = {
     console.log('Getting balances...');
 
     var Soft2PointInstance;
-
+    $('#SSTransferAmount').val("");
+    $('#SSTransferAddress').val("");
     web3.eth.getAccounts(function(error, accounts) {
       if (error) {
         console.log(error);
@@ -109,8 +110,7 @@ App = {
         
         
         $('#SSBalance').text(bal);
-        $('#SSTransferAmount').val("");
-        $('#SSTransferAddress').val("");
+ 
       }).catch(function(err) {
         console.log(err.message);
       });
