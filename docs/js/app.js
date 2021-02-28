@@ -109,8 +109,8 @@ App = {
         
         
         $('#SSBalance').text(bal);
-        $('#SSTransferAmount').val("")
-        $('#SSTransferAddress').val("")
+        $('#SSTransferAmount').val("");
+        $('#SSTransferAddress').val("");
       }).catch(function(err) {
         console.log(err.message);
       });
